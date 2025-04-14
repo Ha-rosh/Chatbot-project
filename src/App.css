@@ -1,37 +1,40 @@
-body{
+/* General Styles */
+body {
   font-family: Arial;
   margin-top: 0;
   margin-bottom: 0;
 }
-.chat-input-container{
+
+/* Chat Input Container */
+.chat-input-container {
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
-
-
 }
 
-.input-container{
+/* Input Styles */
+.input-container {
   display: flex;
-  margin-bottom:30px ;
+  margin-bottom: 30px;
 }
-.inputMessage{
+
+.inputMessage {
   font-size: 25px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 15px;
   border-radius: 10px;
   flex-grow: 1;
   max-width: 500px;
 }
-.inputMessage::placeholder{
+
+.inputMessage::placeholder {
   font-size: 16px;
 }
-.send-button{
-  margin-left:10px ;
+
+.send-button {
+  margin-left: 10px;
   font-size: 15px;
   padding: 11px 16px;
   border: none;
@@ -40,44 +43,44 @@ body{
   color: white;
 }
 
-.profile-text-user{
+/* Chat Messages */
+.profile-text-user {
   display: flex;
   justify-content: end;
   align-items: center;
-
 }
-.profile-text-robot{
+
+.profile-text-robot {
   display: flex;
   align-items: center;
 }
-.message-text{
+
+.message-text {
   background-color: rgb(230, 213, 213);
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin: 15px 10px;
   padding: 15px;
   border-radius: 6px;
-
 }
-.user-image{
-  width: 50px;
 
-  
-}
-.robot-image{
+/* Images */
+.user-image,
+.robot-image {
   width: 50px;
 }
-.chat-container{
+
+.loading-image {
+  width: 35px;
+}
+
+/* Chat Container */
+.chat-container {
   flex-grow: 1;
   overflow: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
-.welcome-text{
-  text-align: center;
-}
-.loading-image{
-  width: 35px;
 
+/* Welcome Text */
+.welcome-text {
+  text-align: center;
 }
